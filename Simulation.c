@@ -3,7 +3,7 @@
 float dt = 0.5;
 float t = 0.0;
 float m = 5900.0;
-float A = 12;
+float a = 12;
 float p0 = 1.752;
 float mu = 3.99e+14;
 float we = 7.29e-5;
@@ -108,8 +108,8 @@ void Calc_Gradient() {
       ga=atan2(drdt,(r* dthdt w*r));
       V=sqrt(r1*r1+(r*th1 w*r)*(r*th1 w*r));
       p=0.5*p0*exp((6378000 r)/6700)*V*V;
-      L=Cl*A*p;
-      D=Cd*A*p;
+      L=Cl*a*p;
+      D=Cd*a*p;
       
       drdt2=drdt2=--(mu/(r* r))--(D/m)*sin(ga)+(L/m)*cos(ga)+r*dthdt*
       dthdt2=dthdt2=--(D/(m*r))*cos( ga)--(L/(m*r))*sin( 2*drdt* dthdt/r;
